@@ -42,7 +42,19 @@ module.exports = function(grunt) {
     browserify: {
       dist: {
         src: "src/html-inspector.js",
-        dest: "<%= pkg.name %>.js"
+        dest: "<%= pkg.name %>.js",
+        options: {
+          transform: [
+            [
+              "babelify",
+              {
+                global: true,
+                only: /^(?:.*\/node_modules\/dom-utils\/|(?!.*\/node_modules\/)).*$/,
+                "presets": ["es2015"]
+              }
+            ]
+          ]
+        }
       }
     },
 
