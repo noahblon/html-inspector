@@ -8,8 +8,8 @@ var Listener = require("./listener")
   , unique = require("mout/array/unique")
   , mixIn = require("mout/object/mixIn")
 
-  , matches = require("dom-utils/src/matches")
-  , getAttributes = require("dom-utils/src/get-attributes")
+  , matches = require("dom-utils/lib/matches")
+  , getAttributes = require("dom-utils/lib/get-attributes")
 
   , isCrossOrigin = require("./utils/cross-origin")
 

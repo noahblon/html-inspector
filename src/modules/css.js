@@ -1,7 +1,7 @@
 var reClassSelector = /\.[a-z0-9_\-]+/ig
   , toArray = require("mout/lang/toArray")
   , unique = require("mout/array/unique")
-  , matches = require("dom-utils/src/matches")
+  , matches = require("dom-utils/lib/matches")
   , isCrossOrigin = require("../utils/cross-origin")
 
 /**

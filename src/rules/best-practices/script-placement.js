@@ -10,7 +10,7 @@ module.exports = {
 
     var elements = []
       , whitelist = config.whitelist
-      , matches = require("dom-utils/src/matches")
+      , matches = require("dom-utils/lib/matches")
 
     function isWhitelisted(el) {
       if (!whitelist) return false

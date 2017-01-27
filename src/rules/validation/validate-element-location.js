@@ -9,8 +9,8 @@ module.exports = {
   func: function(listener, reporter, config) {
 
     var validation = this.modules.validation
-      , matches = require("dom-utils/src/matches")
-      , parents = require("dom-utils/src/parents")
+      , matches = require("dom-utils/lib/matches")
+      , parents = require("dom-utils/lib/parents")
       , warned = [] // store already-warned elements to prevent double warning
 
 
