@@ -19,6 +19,7 @@
   "bin": {
     "htmlinspector": "bin/html-inspector"
   },
+  "main": "lib/html-inspector",
   "dependencies": {
     "colors": "*",
     "commander": "^2.6.0",
