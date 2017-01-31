@@ -21,6 +21,7 @@
       <script src="../node_modules/sinon/lib/sinon/spy.js"></script>
       <script src="../node_modules/sinon/lib/sinon/stub.js"></script>
       <script>
+        window.initMochaPhantomJS && window.initMochaPhantomJS()
         mocha.ui('bdd')
         expect = chai.expect
       </script>
