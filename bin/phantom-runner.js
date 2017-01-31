@@ -1,10 +1,10 @@
-// Safe to assume arguments here
-var basePath = phantom.args[0]
-  , inspectLocation = phantom.args[1]
-  , configFile = phantom.args[2]
-
 var system = require('system')
   , page = require('webpage').create()
+
+// Safe to assume arguments here
+var basePath = system.args[1]
+  , inspectLocation = system.args[2]
+  , configFile = system.args[3]
 
 page.onCallback = function(data) {
   if (data && data.sender && data.sender == "HTMLInspector") {
