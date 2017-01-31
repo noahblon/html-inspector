@@ -214,7 +214,7 @@ var elementData = {
   },
   "img": {
     children: "empty",
-    attributes: "globals; alt; src; crossorigin; usemap; ismap; width; height"
+    attributes: "globals; alt; src; srcset; crossorigin; usemap; ismap; width; height"
   },
   "input": {
     children: "empty",
@@ -358,7 +358,7 @@ var elementData = {
   },
   "source": {
     children: "empty",
-    attributes: "globals; src; type; media"
+    attributes: "globals; src; srcset; type; media"
   },
   "span": {
     children: "phrasing",
